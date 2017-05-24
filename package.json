@@ -1,0 +1,31 @@
+{
+  "name": "eandt",
+  "version": "1.0.0",
+  "description": "Eltzroth & Thompson Greenhouses",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alan Nugent",
+  "license": "ISC",
+  "devDependencies": {
+    "angular": "^1.6.4",
+    "angular-route": "^1.6.4",
+    "bootstrap-sass": "^3.3.7",
+    "grunt-concurrent": "^2.3.1",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-open": "^0.2.3",
+    "grunt-sass": "^2.0.0",
+    "grunt-serve": "^0.1.6",
+    "jquery": "^3.2.1",
+    "load-grunt-tasks": "^3.5.2"
+  },
+  "dependencies": {
+    "grunt-cli": "^1.2.0",
+    "load-grunt-tasks": "^3.5.2"
+  }
+}
