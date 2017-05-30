@@ -1,9 +1,9 @@
 # EantgreenhousesApp
 
-[![Build Status](https://travis-ci.org/Alan-Nugent/eandtgreenhouses.png?branch=master)](https://travis-ci.org/Alan-Nugent/eandtgreenhouses)
-[![Node version](https://img.shields.io/node/v/[eantgreenhouses-app].svg?style=flat)](http://nodejs.org/download/)
-[![https://nodei.co/npm/eantgreenhouses-app.png?downloads=true&downloadRank=true&stars=true](https://nodei.co/npm/eantgreenhouses-app.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/eantgreenhouses-app)
-
+[![npm version](https://img.shields.io/npm/v/eandtgreenhouses.svg)](https://www.npmjs.com/package/eandtgreenhouses)
+=[![Build Status](https://img.shields.io/travis/Alan-Nugent/eandtgreenhouses/master.svg)](https://travis-ci.org/Alan-Nugent/eandtgreenhouses)
+[![devDependency Status](https://img.shields.io/david/dev/Alan-Nugent/eandtgreenhouses.svg)](https://david-dm.org/Alan-Nugent/eandtgreenhouses)
+[![Packagist Prerelease](https://img.shields.io/packagist/vpre/Alan-Nugent/eandtgreenhouses.svg)](https://packagist.org/packages/Alan-Nugent/eandtgreenhouses)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.1.
 
