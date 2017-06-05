@@ -1,3 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
-//@import '../node_modules/bootstrap/dist/css/bootstrap.css';
+@import '../node_modules/bootstrap/scss/bootstrap';
+
 @import 'app/footer/_footer.component';
+@import 'app/footer/_footer.component';
+
+
+/*** views ***/
+@import 'app/about/_about.component';
+@import 'app/contact/_contact.component';
+@import 'app/home/_home.component';
+@import 'app/locations/_locations.component';
+@import 'app/products/_products.component';
+@import 'app/specials/_specials.component';
+@import 'app/sprouts/_sprouts.component';
+
+
+html{
+    height: 100%;
+}
+body{
+    min-height: 100%;
+}

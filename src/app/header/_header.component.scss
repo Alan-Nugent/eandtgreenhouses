@@ -1,0 +1,13 @@
+header{
+    et-header{
+        //@extend .clearfix;
+        display: block;
+        nav{
+            float: right;
+            ul{
+                //              @extend .list-unstyled;
+                //            @extend .list-inline;
+            }
+        }
+    }
+}
