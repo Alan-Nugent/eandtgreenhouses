@@ -1,13 +1,27 @@
 header{
-    et-header{
-        //@extend .clearfix;
+    @extend .container-fluid;
+    @extend .fixed-top;
+    et-header {
+        @extend .clearfix;
+        @extend .row;
         display: block;
-        nav{
-            float: right;
-            ul{
-                //              @extend .list-unstyled;
-                //            @extend .list-inline;
-            }
+        > div{
+           @extend .col-12;
+        }
+    }
+    h1{
+        float: left;
+    }
+    nav{
+        float: right;
+        ul{
+           @extend .nav;
+           li{
+               @extend .nav-item;
+               a{
+                   @extend .nav-link;
+               }
+           }
         }
     }
 }

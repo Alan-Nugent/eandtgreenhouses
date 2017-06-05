@@ -1,4 +1,4 @@
-import {BrowserModule} from '@angular/platform-browser';
+import {BrowserModule, Title } from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
@@ -46,7 +46,7 @@ const appRoutes: Routes = [
         HttpModule,
         RouterModule.forRoot(appRoutes)
     ],
-    providers: [],
-    bootstrap: [AppComponent, HeaderComponent, FooterComponent]
+    providers: [Title],
+    bootstrap: [AppComponent]
 })
 export class AppModule {}
