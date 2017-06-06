@@ -1,4 +1,17 @@
+@import '../_eandtvariables';
 footer{
+    @extend .fixed-bottom;
+    @extend .container-fluid;
+    background-color: $et-blue-dark;
+    color: $white;
+    et-footer{
+        @extend .clearfix;
+        @extend .row;
+        display: block;
+        > div{
+            @extend .col-12;
+        }
+    }
     background: #ababab;
     a{
         color: green;
