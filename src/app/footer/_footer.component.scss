@@ -1,6 +1,5 @@
 @import '../_eandtvariables';
 footer{
-    @extend .fixed-bottom;
     @extend .container-fluid;
     background-color: $et-blue-dark;
     color: $white;
@@ -12,8 +11,26 @@ footer{
             @extend .col-12;
         }
     }
-    background: #ababab;
+    .right-info{
+        @extend .float-right;
+        @extend .text-right;
+        @include rem(font-size, 13px);
+        ul{
+            @extend .list-inline;
+            li{
+                @extend .list-inline-item;
+            }
+        }
+        p{
+            span{
+                display: block;
+            }
+        }
+    }
     a{
-        color: green;
+        color: $white;
+        &[href^='tel:'] {
+            text-decoration: none;
+        }
     }
 }

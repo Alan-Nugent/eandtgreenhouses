@@ -1,6 +1,62 @@
-footer{
-    background: #ababab;
-    a{
-        color: green;
+.hero{
+    @extend %row;
+    height: 400px;
+    background: gray;
+}
+
+.lead{
+    @extend %row;
+    font-family: 'ProximaNovaSemiBold';
+    @include rem(font-size, 18px);
+    @include rem(padding-bottom, 120px);
+    @include rem(padding-top, 120px);
+    > div{
+        @extend .col-sm-8;
+        @extend .push-md-2; 
+        @extend .text-center; 
+    }
+    p{
+        &.h1{
+            font-family: 'ProximaNovaLight';
+            @include rem(font-size, 40px);
+        }
+    }
+}
+.home-tips{
+    @extend %row;
+    @include rem(padding-bottom, 50px);
+    @include rem(padding-top, 50px);
+    background-color: $et-green-bright;
+    >div{
+        &:first-child{
+            @extend .col-sm-4;
+            font-family: 'ProximaNovaLight';
+            @include rem(font-size, 40px);
+            line-height: 1;
+            text-align: right;
+        }
+        &:last-child{
+            @extend .col-sm-6;
+            text-align: justify;
+        }
+    }
+}
+.video-tour{
+    @extend .text-center;
+    @extend %row;
+    @include rem(padding-bottom, 45px);
+    @include rem(padding-top, 45px);
+    h2{
+        font-family: 'ProximaNovaLight';
+        @include rem(font-size, 40px);
+         margin: 0 auto 40px;
+        width: 800px;
+    }
+    > div{
+        margin: 0 auto;
+        height: 300px;
+        width: 600px;
+        background: gray;
+        clear: both;
     }
 }

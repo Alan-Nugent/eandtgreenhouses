@@ -9,5 +9,5 @@ import { Component } from '@angular/core';
  // styleUrls: ['./_header.component.scss']
 })
 export class HeaderComponent {
-  title = 'Contact Us title';
+  title = 'E&T Greenhouses';
 }
