@@ -16,6 +16,7 @@ import {SpecialsComponent} from '../app/specials/specials.component';
 import {LocationsComponent} from '../app/locations/locations.component';
 import {SproutsComponent} from '../app/sprouts/sprouts.component';
 
+
 const appRoutes: Routes = [
     {path: '', component: HomeComponent},
     {path: 'about', component: AboutComponent},
