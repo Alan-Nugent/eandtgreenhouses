@@ -1,7 +1,13 @@
 .hero{
     @extend %row;
-/*    height: 400px;
-    background: gray;*/
+    /*    height: 400px;
+        background: gray;*/
+    .carousel{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
 }
 
 .lead{
@@ -49,7 +55,7 @@
     h2{
         font-family: 'ProximaNovaLight';
         @include rem(font-size, 40px);
-         margin: 0 auto 40px;
+        margin: 0 auto 40px;
         width: 800px;
     }
     > div{
