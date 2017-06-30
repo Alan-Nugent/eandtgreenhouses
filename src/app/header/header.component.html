@@ -1,28 +1,57 @@
 <div>
-    <h1>
-        {{title}}
-    </h1>
-        <nav class="navbar navbar-toggleable-md navbar-light bg-faded" aria-label="main navigation">
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"><span class="sr-only">Toggle navigation</span></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
-true}"><a class="nav-link" routerLink="/">Home<span class="sr-only">(current)</span></a></li>
-                <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
-true}"><a class="nav-link" routerLink="/about">About</a></li>
-                <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
-true}"><a class="nav-link" routerLink="/products">Products</a></li>
-                <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
-true}"><a class="nav-link" routerLink="/specials">Specials</a></li>
-                <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
-true}"><a class="nav-link" routerLink="/locations">Locations</a></li>
-                <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
-true}"><a class="nav-link" routerLink="/lil-sprouts">Lil' Sprouts</a></li>
-                <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
-true}"><a class="nav-link" routerLink="/contact">Contact</a></li>
-            </ul>
-            </div>
-        </nav>
+    <h1 class="col-sm-3">Eltzroth & Thompson <small>Greenhouses</small></h1>
+  <md-sidenav-container>
+    <md-sidenav>
+      <nav class="" aria-label="main navigation">
+        <div>
+          <ul class="navbar-nav">
+            <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+                    true}"><a class="nav-link" routerLink="/">Home<span class="sr-only">(current)</span></a></li>
+            <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+                    true}"><a class="nav-link" routerLink="/about">About</a></li>
+            <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+                    true}"><a class="nav-link" routerLink="/products">Products</a></li>
+            <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+                    true}"><a class="nav-link" routerLink="/specials">Specials</a></li>
+            <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+                    true}"><a class="nav-link" routerLink="/locations">Locations</a></li>
+            <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+                    true}"><a class="nav-link" routerLink="/lil-sprouts">Lil' Sprouts</a></li>
+            <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+                    true}"><a class="nav-link" routerLink="/contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- sidenav content -->
+    </md-sidenav>
+    <button class="navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"><span class="sr-only">Toggle navigation</span></span>
+    </button>
+    <!-- primary content -->
+  </md-sidenav-container>
+
+
+  <!--<nav class="" aria-label="main navigation">-->
+    <!--<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">-->
+      <!--<span class="navbar-toggler-icon"><span class="sr-only">Toggle navigation</span></span>-->
+    <!--</button>-->
+        <!--<div class="collapse" id="navbarNav">-->
+            <!--<ul class="navbar-nav">-->
+                <!--<li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact:-->
+                    <!--true}"><a class="nav-link" routerLink="/">Home<span class="sr-only">(current)</span></a></li>-->
+                <!--<li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact:-->
+                    <!--true}"><a class="nav-link" routerLink="/about">About</a></li>-->
+                <!--<li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact:-->
+                    <!--true}"><a class="nav-link" routerLink="/products">Products</a></li>-->
+                <!--<li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact:-->
+                    <!--true}"><a class="nav-link" routerLink="/specials">Specials</a></li>-->
+                <!--<li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact:-->
+                    <!--true}"><a class="nav-link" routerLink="/locations">Locations</a></li>-->
+                <!--<li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact:-->
+                    <!--true}"><a class="nav-link" routerLink="/lil-sprouts">Lil' Sprouts</a></li>-->
+                <!--<li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact:-->
+                    <!--true}"><a class="nav-link" routerLink="/contact">Contact</a></li>-->
+            <!--</ul>-->
+        <!--</div>-->
+    <!--</nav>-->
 </div>

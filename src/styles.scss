@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import '../node_modules/bootstrap/scss/bootstrap';
+@import '../node_modules/font-awesome/css/font-awesome.css';
 @import 'app/_eandtvariables';
 @import 'sass/mixins/_etMixins';
 @import 'sass/_proxima';
@@ -16,7 +17,7 @@
 @import 'app/products/_products.component';
 @import 'app/specials/_specials.component';
 @import 'app/sprouts/_sprouts.component';
-
+@import 'sass/partials/_global';
 
 html{
     font-size: 62.5%;
@@ -27,6 +28,7 @@ body{
     @include rem(font-size, 16px);
     min-height: 100%;
     main{
-        @include rem(margin-top, 45px);
+        @include rem(margin-top, 60px);
+       @include rem(min-height, 550px);
     }
 }

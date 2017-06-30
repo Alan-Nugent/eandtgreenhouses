@@ -1,7 +1,7 @@
 header{
     @extend .container-fluid;
     @extend .fixed-top;
-    background: $white;
+    background: $faint-white;
     et-header {
         @extend .clearfix;
         @extend .row;

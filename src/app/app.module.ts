@@ -1,8 +1,10 @@
-import {BrowserModule, Title } from '@angular/platform-browser';
+import {BrowserModule, Title} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
 import {Routes, RouterModule} from '@angular/router';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MdButtonModule, MdSidenavModule} from '@angular/material';
 
 import {AppComponent} from './app.component';
 import {HeaderComponent} from '../app/header/header.component';
@@ -18,36 +20,42 @@ import {SproutsComponent} from '../app/sprouts/sprouts.component';
 
 
 const appRoutes: Routes = [
-    {path: '', component: HomeComponent},
-    {path: 'about', component: AboutComponent},
-    {path: 'contact', component: ContactComponent},
-    {path: 'products', component: ProductsComponent},
-    {path: 'specials', component: SpecialsComponent},
-    {path: 'locations', component: LocationsComponent},
-    {path: 'lil-sprouts', component: SproutsComponent},
+  {path: '', component: HomeComponent},
+  {path: 'about', component: AboutComponent},
+  {path: 'contact', component: ContactComponent},
+  {path: 'products', component: ProductsComponent},
+  {path: 'specials', component: SpecialsComponent},
+  {path: 'locations', component: LocationsComponent},
+  {path: 'lil-sprouts', component: SproutsComponent},
 ];
 
 
 @NgModule({
-    declarations: [
-        AppComponent,
-        HeaderComponent,
-        FooterComponent,
-        HomeComponent,
-        AboutComponent,
-        ContactComponent,
-        ProductsComponent,
-        SpecialsComponent,
-        LocationsComponent,
-        SproutsComponent
-    ],
-    imports: [
-        BrowserModule,
-        FormsModule,
-        HttpModule,
-        RouterModule.forRoot(appRoutes)
-    ],
-    providers: [Title],
-    bootstrap: [AppComponent]
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    HomeComponent,
+    AboutComponent,
+    ContactComponent,
+    ProductsComponent,
+    SpecialsComponent,
+    LocationsComponent,
+    SproutsComponent
+  ],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    HttpModule,
+
+    BrowserAnimationsModule,
+    MdButtonModule,
+    MdSidenavModule,
+
+    RouterModule.forRoot(appRoutes)
+  ],
+  providers: [Title],
+  bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule {
+}
