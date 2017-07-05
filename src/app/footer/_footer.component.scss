@@ -1,36 +1,67 @@
 @import '../_eandtvariables';
-footer{
-    @extend .container-fluid;
-    background-color: $et-blue-dark;
-    color: $white;
-    et-footer{
-        @extend .clearfix;
-        @extend .row;
+
+footer {
+  @extend .container-fluid;
+  @include rem(padding-top, 15px);
+  background-color: $et-blue-dark;
+  color: $white;
+  et-footer {
+    @extend .clearfix;
+    @extend .row;
+    display: block;
+    > div {
+      @extend .col-12;
+    }
+  }
+  h2 {
+    float: left;
+    font-family: 'ProximaNovaSemibold';
+    @include rem(font-size, 26px);
+    small {
+      display: block;
+      font-family: 'ProximaNovaLight';
+      @include rem(font-size, 22px);
+    }
+  }
+  .hours{
+    clear: left;
+    float: left;
+  }
+  .right-info {
+    float: right;
+    @extend .text-right;
+    @include rem(font-size, 13px);
+    ul {
+      @extend .list-inline;
+      li {
+        @extend .list-inline-item;
+      }
+    }
+    p {
+      span {
         display: block;
-        > div{
-            @extend .col-12;
-        }
+      }
     }
-    .right-info{
-        @extend .float-right;
-        @extend .text-right;
-        @include rem(font-size, 13px);
-        ul{
-            @extend .list-inline;
-            li{
-                @extend .list-inline-item;
-            }
-        }
-        p{
-            span{
-                display: block;
-            }
-        }
+  }
+  a {
+    color: $white;
+    &:focus, &:hover {
+      color: $yellow;
     }
-    a{
+    &[href^='tel:'] {
+      text-decoration: none;
+      &:focus, &:hover {
         color: $white;
-        &[href^='tel:'] {
-            text-decoration: none;
-        }
+      }
     }
+    &[href^='mailto:'] {
+      text-decoration: underline;
+
+    }
+    &.fa {
+      &:focus, &:hover {
+        text-decoration: none;
+      }
+    }
+  }
 }

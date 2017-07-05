@@ -1,29 +1,33 @@
-header{
-    @extend .container-fluid;
-    @extend .fixed-top;
-    background: $faint-white;
-    et-header {
-        @extend .clearfix;
-        @extend .row;
-        display: block;
-        > div{
-           @extend .col-12;
+header {
+  @extend .container-fluid;
+  @extend .fixed-top;
+  background: $faint-white;
+  et-header {
+    @extend .clearfix;
+    @extend .row;
+    display: block;
+    > div {
+      @extend .col-12;
+    }
+  }
+  h1 {
+    float: left;
+  }
+  button {
+    @extend .btn;
+    float: right;
+  }
+  nav {
+    float: right;
+    @include rem(font-size, 14px);
+    ul {
+      @extend .nav;
+      li {
+        @extend .nav-item;
+        a {
+          @extend .nav-link;
         }
+      }
     }
-    h1{
-        float: left;
-    }
-    nav{
-        float: right;
-        @include rem(font-size, 14px);
-        ul{
-           @extend .nav;
-           li{
-               @extend .nav-item;
-               a{
-                   @extend .nav-link;
-               }
-           }
-        }
-    }
+  }
 }
