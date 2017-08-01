@@ -6,9 +6,7 @@ import {Title} from '@angular/platform-browser';
     templateUrl: './home.component.html'
 })
 export class HomeComponent implements OnInit {
-
-    public constructor(private titleService: Title) {
-    }
+    public constructor(private titleService: Title) {}
     public setTitle(newTitle: string) {
         this.titleService.setTitle(newTitle);
     }
@@ -16,5 +14,4 @@ export class HomeComponent implements OnInit {
     ngOnInit() {
         this.setTitle('E&T Greenhouses | home page');
     }
-
 }

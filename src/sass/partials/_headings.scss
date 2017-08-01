@@ -1,0 +1,24 @@
+h1{
+  font-family: 'ProximaNovaRegular';
+  @include rem(font-size, 30px);
+}
+h2{
+  font-family: 'ProximaNovaSemibold';
+  @include rem(font-size, 26px);
+}
+h3{
+  font-family: 'ProximaNovaSemibold';
+  @include rem(font-size, 22px);
+}
+h4{
+  font-family: 'ProximaNovaSemibold';
+  @include rem(font-size, 18px);
+}
+h5{
+  font-family: 'ProximaNovaSemibold';
+  @include rem(font-size, 16px);
+}
+h6{
+  font-family: 'ProximaNovaSemibold';
+  @include rem(font-size, 14px);
+}

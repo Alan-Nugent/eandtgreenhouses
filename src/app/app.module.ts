@@ -1,10 +1,14 @@
 import {BrowserModule, Title} from '@angular/platform-browser';
-import {NgModule} from '@angular/core';
+import {NgModule, ApplicationRef} from '@angular/core';
+import { CommonModule } from '@angular/common';
 import {FormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
 import {Routes, RouterModule} from '@angular/router';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MdButtonModule, MdSidenavModule} from '@angular/material';
+import {MdButtonModule, MdSidenavModule, MdDialog} from '@angular/material';
+import { AgmCoreModule } from '@agm/core';
+import {GoogleAnalyticsEventsService} from './google-analytics-events.service';
+
 
 import {AppComponent} from './app.component';
 import {HeaderComponent} from '../app/header/header.component';
@@ -52,9 +56,15 @@ const appRoutes: Routes = [
     MdButtonModule,
     MdSidenavModule,
 
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyBfMTka9Ky4b3bMIASHmaKLwMlg6nW7jkU'
+    })
   ],
-  providers: [Title],
+  providers: [
+    Title,
+    GoogleAnalyticsEventsService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {

@@ -8,6 +8,13 @@ import { Component } from '@angular/core';
   }
  // styleUrls: ['./_header.component.scss']
 })
+
+
 export class HeaderComponent {
+  opened = false;
+  clicked(sidenav) {
+    sidenav.open();
+    this.opened = !this.opened;
+  }
 
 }

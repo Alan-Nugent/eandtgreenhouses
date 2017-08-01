@@ -5,6 +5,9 @@
 @import 'sass/mixins/_etMixins';
 @import 'sass/_proxima';
 
+@import '~@angular/material/_theming';
+
+
 @import 'app/header/_header.component';
 @import 'app/footer/_footer.component';
 
@@ -18,17 +21,4 @@
 @import 'app/specials/_specials.component';
 @import 'app/sprouts/_sprouts.component';
 @import 'sass/partials/_global';
-
-html{
-    font-size: 62.5%;
-    height: 100%;
-}
-body{
-    font-family: 'ProximaNovaRegular';
-    @include rem(font-size, 16px);
-    min-height: 100%;
-    main{
-        @include rem(margin-top, 60px);
-       @include rem(min-height, 550px);
-    }
-}
+@import 'sass/partials/_headings';

@@ -2,6 +2,7 @@ header {
   @extend .container-fluid;
   @extend .fixed-top;
   background: $faint-white;
+  box-shadow: 0 1px 8px -1px $gray-dark;
   et-header {
     @extend .clearfix;
     @extend .row;
@@ -16,17 +17,49 @@ header {
   button {
     @extend .btn;
     float: right;
+    &.menu-toggle {
+      background-color: transparent;
+      @include rem(font-size, 30px);
+    }
   }
   nav {
     float: right;
-    @include rem(font-size, 14px);
+
     ul {
       @extend .nav;
       li {
         @extend .nav-item;
         a {
           @extend .nav-link;
+          display: block;
+          padding: 0.5em 1em;
+          font-family: 'ProximaNovaSemibold';
+          text-transform: uppercase;
+          @include rem(font-size, 18px);
+          @include rem(letter-spacing, .8px);
         }
+        &.active {
+          background-color: $gray-blue;
+          a {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
+
+md-sidenav-container {
+  &.mat-sidenav-container {
+    &.mat-sidenav-opened {
+      position: fixed;
+      height: 100%;
+      min-height: 100%;
+      min-width: 100%;
+      left: 0;
+      width: 100%;
+      .mat-sidenav {
+        background-color: $white;
       }
     }
   }

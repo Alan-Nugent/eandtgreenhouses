@@ -2,6 +2,9 @@
 
 [![npm version](https://img.shields.io/npm/v/npm.svg)](https://www.npmjs.com/package/eandtgreenhouses)
 
+//http://www.elegantthemes.com/demo/?theme=Divi
+
+//https://coolors.co/2c363f-8cd790-016fb9-d4c685-6d8ea0
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.1.
 
