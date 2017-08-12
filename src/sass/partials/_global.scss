@@ -1,11 +1,16 @@
 html {
   font-size: 62.5%;
-  height: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
 }
 
 body {
   font-family: 'ProximaNovaRegular';
   @include rem(font-size, 16px);
+  @include rem(margin-bottom, 170px);
+  @include rem(padding-bottom, 60px);
   min-height: 100%;
   main {
     @include rem(margin-top, 60px);

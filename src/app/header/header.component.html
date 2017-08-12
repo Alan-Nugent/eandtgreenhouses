@@ -9,19 +9,19 @@
         <div>
           <ul class="nav flex-column">
             <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
-                    true}"><a class="nav-link" routerLink="/">Home<span class="sr-only">(current)</span></a></li>
+                    true}"><a class="nav-link" routerLink="/" (click)="closeNav(sidenav)">Home<span class="sr-only">(current)</span></a></li>
             <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
-                    true}"><a class="nav-link" routerLink="/about">About</a></li>
+                    true}"><a class="nav-link" routerLink="/about" (click)="closeNav(sidenav)">About</a></li>
             <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
-                    true}"><a class="nav-link" routerLink="/products">Products</a></li>
+                    true}"><a class="nav-link" routerLink="/products" (click)="closeNav(sidenav)">Products</a></li>
             <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
-                    true}"><a class="nav-link" routerLink="/specials">Specials</a></li>
+                    true}"><a class="nav-link" routerLink="/specials" (click)="closeNav(sidenav)">Specials</a></li>
             <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
-                    true}"><a class="nav-link" routerLink="/locations">Locations</a></li>
+                    true}"><a class="nav-link" routerLink="/locations" (click)="closeNav(sidenav)">Locations</a></li>
             <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
-                    true}"><a class="nav-link" routerLink="/lil-sprouts">Lil' Sprouts</a></li>
+                    true}"><a class="nav-link" routerLink="/lil-sprouts" (click)="closeNav(sidenav)">Lil' Sprouts</a></li>
             <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
-                    true}"><a class="nav-link" routerLink="/contact">Contact</a></li>
+                    true}"><a class="nav-link" routerLink="/contact" (click)="closeNav(sidenav)">Contact</a></li>
           </ul>
         </div>
       </nav>

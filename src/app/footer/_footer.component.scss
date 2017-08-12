@@ -2,10 +2,14 @@
 
 footer {
   @extend .container-fluid;
+  background-color: $et-blue-dark;
+  bottom: 0;
+  color: $white;
+  left: 0;
   @include rem(margin-top, 35px);
   @include rem(padding-top, 15px);
-  background-color: $et-blue-dark;
-  color: $white;
+  position: absolute;
+  right: 0;
   et-footer {
     @extend .clearfix;
     @extend .row;
@@ -24,7 +28,7 @@ footer {
       @include rem(font-size, 22px);
     }
   }
-  .hours{
+  .hours {
     clear: left;
     float: left;
   }
