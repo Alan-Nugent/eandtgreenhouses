@@ -6,7 +6,7 @@
 @import 'sass/_proxima';
 
 @import '~@angular/material/_theming';
-
+@include mat-core();
 
 @import 'app/header/_header.component';
 @import 'app/footer/_footer.component';
@@ -22,3 +22,14 @@
 @import 'app/sprouts/_sprouts.component';
 @import 'sass/partials/_global';
 @import 'sass/partials/_headings';
+
+
+.cdk-overlay-container{
+  [role='dialog']{
+    padding: 0 25px;
+  }
+  .mat-dialog-content{
+    background-color: $white;
+    padding: 24px;
+  }
+}
