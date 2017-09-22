@@ -10,9 +10,7 @@ import {VirtualTourComponent} from '../virtual-tour/virtual-tour.component';
 })
 export class HomeComponent implements OnInit {
 
-    public setTitle(newTitle: string) {
-        this.titleService.setTitle(newTitle);
-    }
+
 
     constructor(public dialog: MdDialog,
                 private titleService: Title) {
@@ -25,7 +23,6 @@ export class HomeComponent implements OnInit {
 
 
     ngOnInit() {
-        this.setTitle('E&T Greenhouses | home page');
     }
 }
 

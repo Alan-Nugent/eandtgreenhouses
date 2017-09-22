@@ -1,15 +1,12 @@
 import {BrowserModule, Title} from '@angular/platform-browser';
 import {NgModule, ApplicationRef} from '@angular/core';
-import {CommonModule} from '@angular/common';
 import {FormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
 import {Routes, RouterModule} from '@angular/router';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {Angulartics2Module, Angulartics2GoogleAnalytics} from 'angulartics2';
 import {MdButtonModule, MdSidenavModule, MdDialog, MdDialogModule} from '@angular/material';
 import {AgmCoreModule} from '@agm/core';
-import {GoogleAnalyticsEventsService} from './google-analytics-events.service';
-
-
 import {AppComponent} from './app.component';
 import {HeaderComponent} from '../app/header/header.component';
 import {FooterComponent} from '../app/footer/footer.component';
@@ -25,13 +22,41 @@ import {VirtualTourComponent} from './virtual-tour/virtual-tour.component';
 
 
 const appRoutes: Routes = [
-    {path: '', component: HomeComponent},
-    {path: 'about', component: AboutComponent},
-    {path: 'contact', component: ContactComponent},
-    {path: 'products', component: ProductsComponent},
-    {path: 'specials', component: SpecialsComponent},
-    {path: 'locations', component: LocationsComponent},
-    {path: 'lil-sprouts', component: SproutsComponent},
+    {
+        path: '',
+        component: HomeComponent,
+        data: {title: 'Eltzroth & Thompson Greenhouses'}
+    },
+    {
+        path: 'about',
+        component: AboutComponent,
+        data: {title: 'About Eltzroth & Thompson Greenhouses - Eltzroth & Thompson Greenhouses'}
+    },
+    {
+        path: 'contact',
+        component: ContactComponent,
+        data: {title: 'Contact Us - Eltzroth & Thompson Greenhouses'}
+    },
+    {
+        path: 'products',
+        component: ProductsComponent,
+        data: {title: 'Products - Eltzroth & Thompson Greenhouses'}
+    },
+    {
+        path: 'specials',
+        component: SpecialsComponent,
+        data: {title: 'Specials - Eltzroth & Thompson Greenhouses'}
+    },
+    {
+        path: 'locations',
+        component: LocationsComponent,
+        data: {title: 'Locations - Eltzroth & Thompson Greenhouses'}
+    },
+    {
+        path: 'lil-sprouts',
+        component: SproutsComponent,
+        data: {title: 'Lil\' Sprouts - Eltzroth & Thompson Greenhouses'}
+    }
 ];
 
 
@@ -58,13 +83,13 @@ const appRoutes: Routes = [
         MdButtonModule,
         MdSidenavModule,
         RouterModule.forRoot(appRoutes),
+        Angulartics2Module.forRoot([Angulartics2GoogleAnalytics]),
         AgmCoreModule.forRoot({
             apiKey: 'AIzaSyBfMTka9Ky4b3bMIASHmaKLwMlg6nW7jkU'
         })
     ],
     providers: [
-        Title,
-        GoogleAnalyticsEventsService
+        Title
     ],
     entryComponents: [
         VirtualTourComponent
