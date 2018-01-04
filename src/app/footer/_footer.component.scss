@@ -15,7 +15,10 @@ footer {
     @extend .row;
     display: block;
     > div {
-      @extend .col-12;
+      //@extend .col-xs-12;
+      @include make-col(12);
+      @include rem(padding-left, 15px);
+      @include rem(padding-right, 15px);
     }
   }
   h2 {
@@ -34,7 +37,7 @@ footer {
   }
   .right-info {
     float: right;
-    @extend .text-right;
+    tex-align: right;
     @include rem(font-size, 13px);
     ul {
       @extend .list-inline;

@@ -8,7 +8,7 @@ header {
     @extend .row;
     display: block;
     > div {
-      @extend .col-12;
+      @include make-col(12);
     }
   }
   h1 {
