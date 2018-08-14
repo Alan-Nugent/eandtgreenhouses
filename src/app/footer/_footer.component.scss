@@ -1,8 +1,8 @@
-@import '../_eandtvariables';
+@import '../../sass/partials/eandtvariables';
 
 footer {
   @extend .container-fluid;
-  background-color: $et-blue-dark;
+  background-color: $green;
   bottom: 0;
   color: $white;
   left: 0;
@@ -14,11 +14,24 @@ footer {
     @extend .clearfix;
     @extend .row;
     display: block;
-    > div {
-      //@extend .col-xs-12;
+    > * {
+      @extend .clearfix;
       @include make-col(12);
       @include rem(padding-left, 15px);
       @include rem(padding-right, 15px);
+    }
+    > div{
+      ul, p{
+        @extend .text-right;
+      }
+    }
+    >section{
+      @extend .pb-3;
+      @extend .pt-3;
+      @extend .text-center;
+      @include rem(font-size, 14px);
+      background-color: #2f3e47;
+      color: $white;
     }
   }
   h2 {
@@ -32,8 +45,7 @@ footer {
     }
   }
   .hours {
-    clear: left;
-    float: left;
+    margin-bottom: 0;
   }
   .right-info {
     float: right;

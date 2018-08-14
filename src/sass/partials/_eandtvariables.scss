@@ -1,0 +1,31 @@
+$blue:    #035E7B;
+$indigo:  #283845;
+$purple:  #912F56;
+$pink:    #EF626C;
+$red:     #CC3F0C;
+$orange:  #FF521B;
+$yellow: #D4C685;// F1D302
+$green:   #01bf86;
+$teal:    #899878;
+$cyan:    #00A8E8;
+$dark-green: #00120B;
+
+
+$et-blue-dark: darken($indigo, 5%);
+$gray-blue: #6D8EA0;
+$blue-bright: darken($cyan, 4%);
+$et-green-bright: $green;
+$gray-10: #ececec;
+$gray-dark: #333;
+$faint-white: #F7F7F2;
+
+
+
+
+$default-text-size: 16px;
+
+$font-light: 300;
+$font-normal: normal;
+$font-bold: 700;
+
+$default-text-color: $et-blue-dark;

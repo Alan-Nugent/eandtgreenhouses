@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Title} from '@angular/platform-browser';
-import {MdDialog, MdDialogRef} from '@angular/material';
+import {MatDialog, MatDialogRef} from '@angular/material';
 import {VirtualTourComponent} from '../virtual-tour/virtual-tour.component';
 
 
@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit {
 
 
 
-    constructor(public dialog: MdDialog,
+    constructor(public dialog: MatDialog,
                 private titleService: Title) {
     }
 

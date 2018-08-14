@@ -1,8 +1,8 @@
 header {
   @extend .container-fluid;
   @extend .fixed-top;
-  background: $faint-white;
-  box-shadow: 0 1px 8px -1px $gray-dark;
+  background: $green;
+  //box-shadow: 0 1px 8px -1px $gray-dark;
   et-header {
     @extend .clearfix;
     @extend .row;
@@ -20,6 +20,10 @@ header {
     &.menu-toggle {
       background-color: transparent;
       @include rem(font-size, 30px);
+      box-shadow: none;
+      &:focus, &:hover{
+        color: $orange;
+      }
     }
   }
   nav {

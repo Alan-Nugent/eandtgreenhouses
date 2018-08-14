@@ -1,10 +1,10 @@
 <div>
     <h1 class="col-sm-3">Eltzroth & Thompson <small>Greenhouses</small></h1>
-  <button class="menu-toggle" type="button" [attr.aria-expanded]="opened" aria-label="Toggle navigation" (click)="clicked(sidenav)">
+  <button class="menu-toggle" type="button" [attr.aria-expanded]="opened" aria-label="Toggle navigation" mat-raised-button (click)="drawer.toggle()">
     <span class="fa fa-bars"><span class="sr-only">Toggle navigation</span></span>
   </button>
-  <md-sidenav-container>
-    <md-sidenav #sidenav mode="over" id="top-nav">
+  <mat-sidenav-container>
+    <mat-drawer #drawer [mode]="push" id="top-nav">
       <nav aria-label="main navigation">
         <div>
           <ul class="nav flex-column">
@@ -25,6 +25,6 @@
           </ul>
         </div>
       </nav>
-    </md-sidenav>
-  </md-sidenav-container>
+    </mat-drawer>
+  </mat-sidenav-container>
 </div>
