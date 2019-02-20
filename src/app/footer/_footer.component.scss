@@ -1,87 +1,50 @@
 @import '../../sass/partials/eandtvariables';
 
 footer {
-  @extend .container-fluid;
-  background-color: $green;
+  section {
+    &:first-child {
+      @extend .container;
+    }
+    &:last-child {
+      @extend .container-fluid;
+    }
+  }
+  background-color: #262c37;
   bottom: 0;
   color: $white;
+  font-size: 1.2rem;
   left: 0;
-  @include rem(margin-top, 35px);
-  @include rem(padding-top, 15px);
   position: absolute;
   right: 0;
-  et-footer {
-    @extend .clearfix;
-    @extend .row;
-    display: block;
-    > * {
-      @extend .clearfix;
-      @include make-col(12);
-      @include rem(padding-left, 15px);
-      @include rem(padding-right, 15px);
-    }
-    > div{
-      ul, p{
-        @extend .text-right;
-      }
-    }
-    >section{
-      @extend .pb-3;
-      @extend .pt-3;
-      @extend .text-center;
-      @include rem(font-size, 14px);
-      background-color: #2f3e47;
-      color: $white;
-    }
-  }
   h2 {
-    float: left;
-    font-family: 'ProximaNovaSemibold';
-    @include rem(font-size, 26px);
-    small {
-      display: block;
-      font-family: 'ProximaNovaLight';
-      @include rem(font-size, 22px);
-    }
-  }
-  .hours {
-    margin-bottom: 0;
-  }
-  .right-info {
-    float: right;
-    tex-align: right;
-    @include rem(font-size, 13px);
-    ul {
-      @extend .list-inline;
-      li {
-        @extend .list-inline-item;
-      }
-    }
-    p {
-      span {
-        display: block;
-      }
-    }
+    font-size: 3.1rem;
+    margin: 1.5rem 0 2rem;
   }
   a {
     color: $white;
+    font: 1.2rem 'OpenSansSemibold';
+    text-decoration: underline;
     &:focus, &:hover {
-      color: $yellow;
-    }
-    &[href^='tel:'] {
       text-decoration: none;
-      &:focus, &:hover {
-        color: $white;
-      }
     }
-    &[href^='mailto:'] {
-      text-decoration: underline;
+    &[href^="tel:"] {
+      text-decoration: none;
+    }
+    > span {
+      @extend .sr-only;
+    }
+  }
+  nav {
+    margin-top: 1.5rem;
 
-    }
-    &.fa {
-      &:focus, &:hover {
-        text-decoration: none;
-      }
+  }
+  .below-footer {
+    background-color: #1b222c;
+    font-size: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    p {
+      margin: 0;
     }
   }
 }

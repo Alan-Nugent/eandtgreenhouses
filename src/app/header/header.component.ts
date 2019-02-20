@@ -1,25 +1,21 @@
-import {Component} from '@angular/core';
+import {Component, ViewEncapsulation} from '@angular/core';
 
 @Component({
-    selector: 'et-header',
-    templateUrl: './header.component.html',
-    host: {
-        'class': 'et-header'
-    }
-    // styleUrls: ['./_header.component.scss']
+  selector: 'et-header',
+  templateUrl: './header.component.html',
+  host: {
+    'class': 'et-header'
+  },
+  encapsulation: ViewEncapsulation.None
+
+  // styleUrls: ['./_header.component.scss']
 })
 
 
 export class HeaderComponent {
-    opened = false;
+  opened = false;
 
-    clicked(sidenav) {
-        sidenav.open();
-        this.opened = !this.opened;
-    }
 
-    closeNav(sidenav) {
-        sidenav.close();
-        this.opened = !this.opened;
-    }
+  closeNav(sidenav) {
+  }
 }

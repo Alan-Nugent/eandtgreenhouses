@@ -1,7 +1,5 @@
 .hero {
   @extend %row;
-  /*    height: 400px;
-      background: gray;*/
   .carousel {
     width: 100%;
     img {
@@ -13,35 +11,25 @@
 .lead {
   @extend %row;
   @extend .justify-content-center;
-  //background-color: lighten($et-green-bright , 18%);
-  font-family: 'ProximaNovaSemiBold';
   @include rem(font-size, 18px);
   @include rem(padding-bottom, 120px);
   @include rem(padding-top, 120px);
   > div {
-    @include make-col(8);
-    //@include make-col-offset(md, 2);
-    //@extend .push-md-2;
+    @include make-col(10);
     text-align: center;
-  }
-  p {
-    &.h1 {
-      font-family: 'ProximaNovaLight';
-      @include rem(font-size, 40px);
-    }
   }
 }
 
 .home-tips {
   @extend %row;
-  border-top: 1px solid $gray-10;
+  background-color: rgba(9, 129, 74, 0.6784313725490196);
+  //background-color: #09814A;
+  color: $white;
   @include rem(padding-bottom, 50px);
   @include rem(padding-top, 50px);
   > div {
     &:first-child {
       @extend .col-sm-4;
-      font-family: 'ProximaNovaLight';
-      @include rem(font-size, 40px);
       line-height: 1;
       text-align: right;
     }
@@ -62,17 +50,6 @@
   @include rem(margin-top, 75px);
   @include rem(padding-bottom, 45px);
   @include rem(padding-top, 45px);
-  h2 {
-    font-family: 'ProximaNovaLight';
-    @include rem(font-size, 40px);
-    margin: 0 auto 40px;
-    width: 800px;
-  }
-  > div {
-    margin: 0 auto;
-    width: 600px;
-    clear: both;
-  }
 }
 .mat-dialog-container {
   display: flex !important;

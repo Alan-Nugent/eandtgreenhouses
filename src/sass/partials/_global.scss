@@ -7,14 +7,12 @@ html {
 }
 
 body {
-  font-family: 'ProximaNovaRegular';
+  font-family: 'OpenSansRegular';
   @include rem(font-size, 16px);
-  @include rem(margin-bottom, 170px);
+  margin-bottom: 29rem;
   @include rem(padding-bottom, 60px);
   min-height: 100%;
-  background-color: #f3f6fa;
   main {
-    @include rem(margin-top, 60px);
     @include rem(min-height, 550px);
   }
 }
@@ -33,7 +31,7 @@ text-align: center;
       color: $white;
       h1 {
         @include rem(font-size, 30px);
-        font-family: 'ProximaNovaRegular';
+        font-family: 'merriweatherbold';
         margin-bottom: 0;
         text-transform: uppercase;
       }

@@ -1,14 +1,23 @@
 header {
   @extend .container-fluid;
-  @extend .fixed-top;
-  background: $green;
-  //box-shadow: 0 1px 8px -1px $gray-dark;
-  et-header {
-    @extend .clearfix;
+  background: $white;
+  section {
     @extend .row;
+    @extend .d-flex;
+    &:first-child {
+      @extend .justify-content-center;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 2.5rem;
+      padding-top: 4.5rem;
+    }
+    &:last-child{
+      padding-bottom: 2rem;
+      padding-top: 2rem;
+    }
+  }
+  et-header {
     display: block;
     > div {
-      @include make-col(12);
     }
   }
   h1 {
@@ -21,7 +30,7 @@ header {
       background-color: transparent;
       @include rem(font-size, 30px);
       box-shadow: none;
-      &:focus, &:hover{
+      &:focus, &:hover {
         color: $orange;
       }
     }
@@ -30,24 +39,25 @@ header {
     float: right;
 
     ul {
-      @extend .nav;
+      //@extend .nav;
       li {
-        @extend .nav-item;
+        //@extend .nav-item;
         a {
-          @extend .nav-link;
-          display: block;
-          padding: 0.5em 1em;
-          font-family: 'ProximaNovaSemibold';
-          text-transform: uppercase;
-          @include rem(font-size, 18px);
-          @include rem(letter-spacing, .8px);
-        }
-        &.active {
-          background-color: $gray-blue;
-          a {
-            color: $white;
+          &.nav-link {
+            //@extend .nav-link;
+            display: block;
+            padding: 1rem 1em !important;
+            font-family: 'OpenSansSemibold';
+            text-transform: uppercase;
+            font-size: 1.6rem;
           }
         }
+        //&.active {
+        //  background-color: $gray-blue;
+        //  a {
+        //    color: $white;
+        //  }
+        //}
       }
     }
   }

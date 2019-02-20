@@ -3,11 +3,16 @@
 @import '../node_modules/font-awesome/css/font-awesome.css';
 @import 'sass/partials/_eandtvariables';
 @import 'sass/mixins/_etMixins';
-@import 'sass/_proxima';
 
-@import '~@angular/material/_theming';
-@include mat-core();
-@import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import 'sass/partials/_merriweather';
+@import 'sass/partials/_openSans';
+
+@import 'sass/partials/_global';
+@import 'sass/partials/_headings';
+
+//@import '~@angular/material/_theming';
+//@include mat-core();
+//@import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
 
 @import 'app/header/_header.component';
 @import 'app/footer/_footer.component';
@@ -21,8 +26,7 @@
 @import 'app/products/_products.component';
 @import 'app/specials/_specials.component';
 @import 'app/sprouts/_sprouts.component';
-@import 'sass/partials/_global';
-@import 'sass/partials/_headings';
+
 
 
 .cdk-overlay-container{

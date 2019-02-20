@@ -1,7 +1,6 @@
 <div class="container-fluid">
   <div class="hero">
-
-    <div id="et-home-hero" class="carousel slide" data-ride="carousel">
+    <div id="et-home-hero" class="carousel slide carousel-fade" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -34,29 +33,13 @@
   </div>
   <div class="lead">
     <div>
-      <p class="h1">Charlottesville's Only Family Owned Greenhouse</p>
+      <h2>Charlottesville's Only Family Owned Greenhouse</h2>
       <p>Providing Charlottesville with the best quality plants and knowledgeable customer service.</p>
-    </div>
-  </div>
-
-  <div class="video-tour">
-    <h2>Take a Tour</h2>
-    <div>
-      <!--<object class="embed-responsive embed-responsive-4by3"  height="300" style="max-width: 775px;">-->
-        <!--<param name="movie"-->
-               <!--value="http://api.everyscape.com/v/1/x/viewer/everyscape_viewer.swf?xml=http://api.everyscape.com/panoviewerparams/1.x/static/775/400/vs/16251334">-->
-        <!--<param name="allowFullScreen" value="true">-->
-        <!--<param name="allowscriptaccess" value="always">-->
-        <!--<embed class="embed-responsive-item"-->
-               <!--src="http://api.everyscape.com/v/1/x/viewer/everyscape_viewer.swf?xml=http://api.everyscape.com/panoviewerparams/1.x/static/775/400/vs/16251334"-->
-               <!--type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true"  height="100%">-->
-      <!--</object>-->
-      <button class="btn btn-light" md-button (click)="openDialog()">View <span class="sr-only"> the video tour of Eltzroth &amp; Thompson Greenhouses</span> in full screen</button>
     </div>
   </div>
   <div class="home-tips">
     <div>
-      <p>Gardening Tip</p>
+      <h2>Gardening Tip</h2>
 
     </div>
     <div>
@@ -69,4 +52,20 @@
         it prefers to go into a semi-shaded spot.</p>
     </div>
   </div>
+  <div class="video-tour d-flex justify-content-center">
+    <h2 class="col-12">Take a Tour</h2>
+
+      <!--<object class="embed-responsive embed-responsive-4by3"  height="300" style="max-width: 775px;">-->
+        <!--<param name="movie"-->
+               <!--value="http://api.everyscape.com/v/1/x/viewer/everyscape_viewer.swf?xml=http://api.everyscape.com/panoviewerparams/1.x/static/775/400/vs/16251334">-->
+        <!--<param name="allowFullScreen" value="true">-->
+        <!--<param name="allowscriptaccess" value="always">-->
+        <!--<embed class="embed-responsive-item"-->
+               <!--src="http://api.everyscape.com/v/1/x/viewer/everyscape_viewer.swf?xml=http://api.everyscape.com/panoviewerparams/1.x/static/775/400/vs/16251334"-->
+               <!--type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true"  height="100%">-->
+      <!--</object>-->
+      <a class="col-12" href=""><img src="./assets/fallTour.jpg" alt="virtual tour of Eltzroth and Thompson Greenhouses"> </a>
+      <button  class="col-12 btn btn-light" md-button (click)="openDialog()">View <span class="sr-only"> the video tour of Eltzroth &amp; Thompson Greenhouses</span> in full screen</button>
+  </div>
+
 </div>
